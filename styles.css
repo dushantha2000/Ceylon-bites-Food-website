@@ -1,0 +1,188 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.hero {
+    background-image: url('images/hero-section.jpg'); /* Replace with your image */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#menu {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 100px;
+
+   
+}
+
+.menu-category {
+    margin:10px;
+
+
+  
+}
+
+.menu-card {
+    background-color: #ffffff61;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-card-content {
+    padding: 15px;
+}
+
+.menu-card h3 {
+    margin-top: 0;
+}
+
+section {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+
+#about,
+#book-table {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about {
+    background-color: black;
+}
+
+#about h2,
+#book-table h2 {
+    color: #bbbbbb;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #6e6c6c;
+}
+
+#book-table form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#book-table label {
+    display: block;
+    margin-bottom: 10px;
+    color: #6e6c6c;
+}
+
+#book-table input,
+#book-table select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#book-table button {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#book-table button:hover {
+    background-color: #e04000;
+}
