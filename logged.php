@@ -7,13 +7,11 @@ if (!isset($_SESSION['username'])) {
     header("Location: login.php");
     exit();
 }
-
 // Assuming you have a database connection established
 $servername = "localhost";
 $username = "root";
 $password = "";
 $database = "ck";
-
 $conn = new mysqli($servername, $username, $password, $database);
 
 if ($conn->connect_error) {
@@ -29,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["order"])) {
     $quantity = $_POST['quantity'];
     $total_price = $unit_price * $quantity;
 
-    // Fetch user_id based on the username from the user table
+    // Fetch user_id based on the username from the user 
     $username = $_SESSION['username'];
     $userQuery = "SELECT user_id FROM user WHERE first_name = '{$_SESSION['username']}'";
     $userResult = $conn->query($userQuery);
